@@ -6,64 +6,64 @@
 /* ── CSS Custom Properties (Design Tokens) ── */
 :root {
   /* Earthy Color Palette */
-  --color-bg-dark:        #1a120b;
-  --color-bg-warm:        #2c1e12;
-  --color-bg-section:     #241810;
-  --color-bg-alt:         #1e150e;
+  --color-bg-dark: #1a120b;
+  --color-bg-warm: #2c1e12;
+  --color-bg-section: #241810;
+  --color-bg-alt: #1e150e;
 
-  --color-clay:           #c67a3c;
-  --color-clay-light:     #d9915a;
-  --color-clay-dark:      #a3612e;
-  --color-terracotta:     #c04a2a;
-  --color-gold:           #d4a853;
-  --color-gold-light:     #e6c47a;
-  --color-mud:            #8b6a4a;
-  --color-sand:           #d4c5a9;
-  --color-cream:          #f5efe0;
-  --color-beige:          #e8dcc8;
+  --color-clay: #c67a3c;
+  --color-clay-light: #d9915a;
+  --color-clay-dark: #a3612e;
+  --color-terracotta: #c04a2a;
+  --color-gold: #d4a853;
+  --color-gold-light: #e6c47a;
+  --color-mud: #8b6a4a;
+  --color-sand: #d4c5a9;
+  --color-cream: #f5efe0;
+  --color-beige: #e8dcc8;
 
-  --color-text-primary:   #f5efe0;
+  --color-text-primary: #f5efe0;
   --color-text-secondary: #c8b99a;
-  --color-text-muted:     #9a8a72;
+  --color-text-muted: #9a8a72;
 
   /* Glassmorphism */
-  --glass-bg:             rgba(44, 30, 18, 0.45);
-  --glass-bg-hover:       rgba(44, 30, 18, 0.65);
-  --glass-border:         rgba(198, 122, 60, 0.15);
-  --glass-border-hover:   rgba(198, 122, 60, 0.35);
-  --glass-blur:           16px;
-  --glass-blur-strong:    24px;
+  --glass-bg: rgba(44, 30, 18, 0.45);
+  --glass-bg-hover: rgba(44, 30, 18, 0.65);
+  --glass-border: rgba(198, 122, 60, 0.15);
+  --glass-border-hover: rgba(198, 122, 60, 0.35);
+  --glass-blur: 16px;
+  --glass-blur-strong: 24px;
 
   /* Shadows */
-  --shadow-sm:   0 2px 8px rgba(0, 0, 0, 0.2);
-  --shadow-md:   0 8px 32px rgba(0, 0, 0, 0.3);
-  --shadow-lg:   0 16px 48px rgba(0, 0, 0, 0.4);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.4);
   --shadow-glow: 0 0 30px rgba(198, 122, 60, 0.15);
 
   /* Typography */
-  --font-display:  'Playfair Display', 'Georgia', serif;
-  --font-body:     'Inter', 'Segoe UI', sans-serif;
-  --font-accent:   'Cormorant Garamond', 'Georgia', serif;
+  --font-display: 'Playfair Display', 'Georgia', serif;
+  --font-body: 'Inter', 'Segoe UI', sans-serif;
+  --font-accent: 'Cormorant Garamond', 'Georgia', serif;
 
   /* Spacing */
-  --space-xs:  0.5rem;
-  --space-sm:  1rem;
-  --space-md:  1.5rem;
-  --space-lg:  2.5rem;
-  --space-xl:  4rem;
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
   --space-2xl: 6rem;
   --space-3xl: 8rem;
 
   /* Border Radius */
-  --radius-sm:  8px;
-  --radius-md:  12px;
-  --radius-lg:  20px;
-  --radius-xl:  28px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
   --radius-full: 9999px;
 
   /* Transitions */
-  --transition-fast:  0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-slow:  0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-spring: 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
@@ -146,12 +146,15 @@ ul {
 [data-animate="fade-up"] {
   transform: translateY(40px);
 }
+
 [data-animate="fade-down"] {
   transform: translateY(-40px);
 }
+
 [data-animate="fade-left"] {
   transform: translateX(40px);
 }
+
 [data-animate="fade-right"] {
   transform: translateX(-40px);
 }
@@ -275,9 +278,11 @@ ul {
 .nav-toggle.active span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
+
 .nav-toggle.active span:nth-child(2) {
   opacity: 0;
 }
+
 .nav-toggle.active span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
 }
@@ -309,19 +314,22 @@ ul {
 }
 
 @keyframes heroZoom {
-  from { transform: scale(1.05); }
-  to   { transform: scale(1.15); }
+  from {
+    transform: scale(1.05);
+  }
+
+  to {
+    transform: scale(1.15);
+  }
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(26, 18, 11, 0.5) 0%,
-    rgba(26, 18, 11, 0.7) 50%,
-    rgba(26, 18, 11, 0.95) 100%
-  );
+  background: linear-gradient(to bottom,
+      rgba(26, 18, 11, 0.5) 0%,
+      rgba(26, 18, 11, 0.7) 50%,
+      rgba(26, 18, 11, 0.95) 100%);
 }
 
 .hero-content {
@@ -355,6 +363,7 @@ ul {
 .title-accent {
   color: var(--color-clay);
   font-style: italic;
+  font-size: 3rem;
 }
 
 .hero-desc {
@@ -466,8 +475,17 @@ ul {
 }
 
 @keyframes scrollPulse {
-  0%, 100% { opacity: 0.3; height: 40px; }
-  50%      { opacity: 1;   height: 50px; }
+
+  0%,
+  100% {
+    opacity: 0.3;
+    height: 40px;
+  }
+
+  50% {
+    opacity: 1;
+    height: 50px;
+  }
 }
 
 /* ═══════════════════════════════════════════════════════
